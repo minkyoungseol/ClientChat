@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ClientChat
+{
+    static class Program
+    {
+        /// <summary>
+        /// 해당 애플리케이션의 주 진입점입니다.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            Application.Run(new Client_LogIn());
+            //Client_Main MainApp = new Client_Main();
+            Application.Run(new Client_Main());
+        }
+    }
+}
